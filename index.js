@@ -12,7 +12,8 @@ function distanceTravelledInFeet(location, endPoint) {
 }
 
 function calculatesFarePrice (start, destination) {
-    const feetTravel = calculatesFarePrice (start, destination);
+    const feetTravel = distanceTravelledInFeet(start, destination);
+    console.log(feetTravel);
 if (feetTravel <= 400) {
     return 0;
 } else if (feetTravel > 400 && feetTravel <= 2000) {
@@ -22,5 +23,5 @@ if (feetTravel <= 400) {
 } else {
     return "cannot travel that far";
 }
-}
+}   
 
